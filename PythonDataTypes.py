@@ -21,3 +21,4 @@ The following are the data types available in python
 """
 
 #            Let us go through the data types 
+
