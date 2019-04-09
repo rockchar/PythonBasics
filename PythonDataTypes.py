@@ -22,3 +22,14 @@ The following are the data types available in python
 
 #            Let us go through the data types 
 
+#---------------------- STRINGS -------------------------------
+#print formatting with placeholders
+
+print("I am going to insert %s here." %"something")
+
+#print formatting using two place holders
+print("I am going to insert %s here and %s here." %("string 1","string 2"))
+
+#string formatting using variable names 
+x,y = "hello","world"
+print("This will print %s %s"%(x,y))
