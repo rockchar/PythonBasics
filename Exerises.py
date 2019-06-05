@@ -146,3 +146,33 @@ just the keys, sorting them, then accessing the dictionary for each key in the
 resulting list comprehension, as in the second example, appears to be speedier.
 
 '''
+
+#-------------------------- TUPLES----------------------------------------
+#What is the major difference between tuples and lists?
+# Lists are mutable, tuples are immutable
+
+#How do you create a tuple?
+# using round brackets
+tuple_1 = (1,2,3,4)
+tuple_2 = 1,2,3,4,5,6
+
+
+print(tuple_1)
+
+tuple_1 = (3,4,5)+tuple_1
+print(tuple_1)
+
+print(tuple_1*4)
+
+#------------------------- SETS ------------------------------------------
+#What is unique about a set?
+#sets do not have any duplicate value
+
+#Use a set to find the unique values of the list below:
+list5 = [1,2,2,33,4,4,11,22,3,3,2]
+print(list5)
+
+my_set = set(list5)
+print(my_set)
+my_set.add("Hello")
+print(my_set)
