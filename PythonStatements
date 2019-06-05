@@ -40,6 +40,16 @@ print(my_list3)
 my_list4 = [x**2 for x in range(1,11)]
 print(my_list4)
 
+#print all the odd numbers in the range 
+myList = [x for x in range(1,11) if x%2 != 0 ]
+print(myList)
+
+#farenheit to celcius conversion in place
+
+list_celcius = [0,32,65,41,100,72]
+list_farenheit = [(9/5*celcius + 32) for celcius in list_celcius ]
+print(list_celcius)
+print(list_farenheit)
 
 #------------- Ranges and steps -----------------------------
 print(list_1[1:11:2])#slice(start:stop[:step])
