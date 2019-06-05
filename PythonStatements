@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jun  5 11:56:37 2019
+
+@author: rockchar
+"""
+
+#-------------------- FOR LOOPS --------------------
+
+list_1 = [1,2,3,4,5,6,7,8,9,10]
+
+for x in list_1:
+    print(x)
+    
+    
+    
+my_string = "hello world"
+
+for letter in my_string:
+    if letter == "w":
+        print("W found")
+        break
+    
+#----------- List comprehension using for loops -------------
+        
+my_list = []
+for letter in my_string:
+    my_list.append(letter)
+
+print(my_list)
+
+my_list2 = [letter for letter in my_string]
+print(my_list2)
+
+my_list3 = [x for x in range(1,11)]
+print(my_list3)
+
+#------------- Ranges and steps -----------------------------
