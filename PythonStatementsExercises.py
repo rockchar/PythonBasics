@@ -54,7 +54,35 @@ st_words = st.split()
 print([word for word in st_words if len(word)%2==0])
 
 
+# Write a program that prints the integers from 1 to 100. But for multiples of 
+# three print "Fizz" instead of the number, and for the multiples of five print 
+# "Buzz". For numbers which are multiples of both three and five print 
+# "FizzBuzz".
 
+my_list = [n for n in range (1,101)]
+print(my_list)
+index=0
+for num in my_list:
+    if num%3==0 and num%5==0:
+        my_list[index]="FizzBuzz"
+    elif num%3==0 and num%5!=0:
+        my_list[index]="Fizz"
+    elif num%3!=0 and num%5==0:
+        my_list[index]="Buzz"
+    index+=1;
+    
+print(my_list)
 
+ 
+#Use List Comprehension to create a list of the first letters of every word in 
+#the string below:
+st = 'Create a list of the first letters of every word in this string'
+my_list = st.split()
+letter_list=[]
+for word in my_list:
+    letter_list.append(word[0])
+    
+print(letter_list)
+    
 
 
