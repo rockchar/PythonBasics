@@ -36,7 +36,8 @@ print("This will print %s %s"%(x,y))
 
 """
 format conversion methods
-there are two methods for converting any python object to string %s and %r. they use two different 
+there are two methods for converting any python object to string %s and %r. 
+they use two different
 methods str() and repr()
 Let us see the difference between them.
 
@@ -58,7 +59,7 @@ print("here is a string with a %s"%'\t tab')
 
 print("here is is a string with a %r"%"\t tab")
 
-#-----------------------------floating point and precision --------------------
+#-----------------------------floating point and precision ------------------
 '''
 %s convers everything to a string %d will convert everything to an integer without 
 any decimals,%f is for float
@@ -79,5 +80,13 @@ First: hi!, Second:  3.14, Third: 'bye!'
 
 print('First: %s, Second: %5.2f, Third: %r' %('hi!',3.1415,'bye!'))
 
-#---------------------------formatting using .format()--------------------------
+#---------------------------formatting using .format()------------------------
 
+print("This is formatting {} string .format {}".format("üsing" , "method"))
+
+print("this is another {a} method using .{a} {b}".format(a="format",b="method"))
+
+print("This is another that says the {} {} {} jumps over the lazy dogs !".format("Quick","Brown","Fox"))
+
+
+print("This is another that says the {2} {1} {0} jumps over the lazy dogs !".format("Quick","Brown","Fox"))
