@@ -61,3 +61,8 @@ function. They are one time function and used just once and never referenced
 again.
 
 '''
+
+name = lambda n : n**2
+print(name(2))
+
+print(list(map(lambda n:n**2,my_list)))
