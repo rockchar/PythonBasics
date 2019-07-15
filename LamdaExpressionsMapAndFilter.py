@@ -62,7 +62,8 @@ again.
 
 '''
 
-name = lambda n : n**2
+name = lambda n : n**2   #this is just for illustration as no one gives a name 
+                         #to lambda
 print(name(2))
 
 print(list(map(lambda n:n**2,my_list)))

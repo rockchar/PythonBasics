@@ -10,7 +10,7 @@ Created on Wed Jun  5 17:23:02 2019
 #start with 's':
 
 st = 'Print only the words that start with s in this sentence'
-split_string = st.split()
+split_string = st.split() #split_string is a list 
 print(split_string)
 for words in split_string:
     index = 0
@@ -26,7 +26,6 @@ split_csv = st1.split(",")
 print(split_csv)
 
 #Use range() to print all the even numbers from 0 to 10.
-
 print([n for n in range(0,11) if n%2==0])
 #print([n if n%2==0 else '' for n in range(0,11)])
 
@@ -53,7 +52,6 @@ st = 'Print every word in this sentence that has an even number of letters'
 st_words = st.split()
 print([word for word in st_words if len(word)%2==0])
 
-
 # Write a program that prints the integers from 1 to 100. But for multiples of 
 # three print "Fizz" instead of the number, and for the multiples of five print 
 # "Buzz". For numbers which are multiples of both three and five print 
@@ -70,23 +68,19 @@ for num in my_list:
     elif num%3!=0 and num%5==0:
         my_list[index]="Buzz"
     index+=1;
-    
 print(my_list)
 
  
 #Use List Comprehension to create a list of the first letters of every word in 
 #the string below:
 st = 'Create a list of the first letters of every word in this string'
-
 #alternate method 
 print([word[0] for word in st.split()])
-
 #long method
 my_list = st.split()
 letter_list=[]
 for word in my_list:
     letter_list.append(word[0])
-    
 print(letter_list)
     
 
