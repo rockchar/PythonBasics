@@ -59,9 +59,11 @@ print(even_list)
 Lamda expression is a quick one time use function and also known as ananomys 
 function. They are one time function and used just once and never referenced 
 again.
+
 '''
 
-name = lambda n : n**2
+name = lambda n : n**2   #this is just for illustration as no one gives a name 
+                         #to lambda
 print(name(2))
 
 print(list(map(lambda n:n**2,my_list)))
