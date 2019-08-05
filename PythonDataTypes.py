@@ -41,7 +41,8 @@ they use two different
 methods str() and repr()
 Let us see the difference between them.
 
-%r delivers the string representation of the string including any escape characters 
+%r delivers the string representation of the string including any escape 
+characters 
 
 """
 
@@ -61,8 +62,8 @@ print("here is is a string with a %r"%"\t tab")
 
 #-----------------------------floating point and precision ------------------
 '''
-%s convers everything to a string %d will convert everything to an integer without 
-any decimals,%f is for float
+%s convers everything to a string %d will convert everything to an integer 
+without any decimals,%f is for float
 
 '''
 print("number to string %s, number to int %d, number to float %f"%(3.45,3.45,3.45))
