@@ -97,7 +97,28 @@ def CheckPalindromeUsingSlicing(arg):
     else:
         return False
     
-    
+'''
+Write a Python function to check whether a string is pangram or not.
+
+Note : Pangrams are words or sentences containing every letter of the alphabet at least once.
+For example : "The quick brown fox jumps over the lazy dog"
+Hint: Look at the string module
+'''
+import string
+def IsPangram(arg):
+    arg= arg.replace(" ","")
+    arg= arg.lower()
+    listAlpha=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", 
+               "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    print(string.ascii_lowercase)
+    listArg= list(set(arg))
+    listArg.sort()
+    print(listArg)
+    if listArg == listAlpha:
+        return True
+    else:
+        return False
+  
 '''
 Main function
 '''    
@@ -113,7 +134,7 @@ def main():
     UniqueList([1,1,1,1,2,2,3,3,3,3,4,5])
     print(CheckPalindromeUsingList('helleh'))
     print(CheckPalindromeUsingSlicing('nurses runs'))
-    
+    print(IsPangram("Jived fox nymph grabs quick waltz"))
 if __name__ == '__main__':
     main()
     
