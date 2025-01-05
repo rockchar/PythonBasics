@@ -6,7 +6,6 @@ Created on Sun Jun 16 13:12:03 2019
 @author: rockchar
 """
 
-
 '''
 map function
 The map function allows you to "map" a function to an iterable object. 
@@ -14,27 +13,31 @@ That is to say you can quickly call the same function to every item in an
 iterable, such as a list. For example:
 '''
 
-def square(num):
-    return num**2
 
-mylist=[1,2,3,4]
-for item in map(square,mylist):
+def square(num):
+    return num ** 2
+
+
+mylist = [1, 2, 3, 4]
+for item in map(square, mylist):
     print(item)
-    
-square_list = list(map(square,mylist))
+
+square_list = list(map(square, mylist))
 
 print(square_list)
-print(list(map(square,mylist)))
+print(list(map(square, mylist)))
 
-#lets try some complex function
+
+# lets try some complex function
 def splicer(name):
-    if len(name)%2==0:
+    if len(name) % 2 == 0:
         return True
     else:
         return name[0]
-    
-name_list = ["Rohit","EVAN","MEAW"]
-splice_list = list(map(splicer,name_list))
+
+
+name_list = ["Rohit", "EVAN", "MEAW"]
+splice_list = list(map(splicer, name_list))
 print(splice_list)
 
 '''
@@ -44,16 +47,17 @@ the results based on only the inputs that return true for the given condition
 
 '''
 
-#example to filter all the even numbers in a list
+# example to filter all the even numbers in a list
 
-my_list = [1,2,3,4,5,6,7,8]
+my_list = [1, 2, 3, 4, 5, 6, 7, 8]
+
 
 def myEvenfilter(num):
-    return num%2==0    # evaluates to True or False
+    return num % 2 == 0  # evaluates to True or False
 
-even_list = list(filter(myEvenfilter,my_list))
+
+even_list = list(filter(myEvenfilter, my_list))
 print(even_list)
-
 
 '''
 Lamda expression is a quick one time use function and also known as ananomys 
@@ -62,8 +66,8 @@ again.
 
 '''
 
-name = lambda n : n**2   #this is just for illustration as no one gives a name 
-                         #to lambda
+name = lambda n: n ** 2  # this is just for illustration as no one gives a name
+# to lambda
 print(name(2))
 
-print(list(map(lambda n:n**2,my_list)))
+print(list(map(lambda n: n ** 2, my_list)))
