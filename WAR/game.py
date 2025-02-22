@@ -40,23 +40,25 @@ class GAME:
             if self.players[0].cards[-1].value > self.players[1].cards[-1].value:
                 self.players[0].add_card(self.players[1].cards.pop(-1))
                 self.players[0].cards += self.buffer
+                print(f"player 0 takes {self.players[0].cards[0]}")
                 self.buffer.clear()
             elif self.players[0].cards[-1].value == self.players[1].cards[-1].value:
+                print(f"MATCH {self.players[0].cards[-1]} AND {self.players[1].cards[-1]}")
                 self.buffer.append(self.players[1].cards.pop(-1))
                 self.buffer.append(self.players[0].cards.pop(-1))
             elif self.players[0].cards[-1].value < self.players[1].cards[-1].value:
                 self.players[1].add_card(self.players[0].cards.pop(-1))
                 self.players[1].cards += self.buffer
+                print(f"player 1 takes {self.players[1].cards[0]}")
                 self.buffer.clear()
 
             if len(self.players[0].cards) == 0:
-                print("Player 0 Wins")
+                print("Player 1 Wins")
                 break
             elif len(self.players[1].cards) == 0:
-                print("Player 1 Wins")
+                print("Player 0 Wins")
                 break
 
 
 g = GAME(2)
 g.begin_game()
-
