@@ -13,18 +13,7 @@ class DECK:
         for suit in card_suit:
             for rank in card_rank:
                 self.cards.append(CARD(suit, rank))
-        i = 0
-        for suit in card_suit:
-            for rank in card_rank:
-                print(self.cards[i])
-                i = i + 1
-        print("Count is :%d", i)
 
     def shuffle(self):
         random.shuffle(self.cards)
-        print("\n\n\nAfter Shuffle")
-        i = 0
-        for suit in card_suit:
-            for rank in card_rank:
-                print(self.cards[i])
-                i = i + 1
+        print("CARDS SHUFFLED\n")
