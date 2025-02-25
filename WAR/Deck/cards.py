@@ -15,5 +15,5 @@ class CARD:
         self.value = card_value[rank]
 
     def __str__(self):
-        return "\n CARD object is {0} of {1}".format(self.rank,self.suit)
+        return "CARD is {0} of {1}".format(self.rank,self.suit)
 

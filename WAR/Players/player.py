@@ -10,7 +10,10 @@ class PLAYER:
         self.player_num = player_num
 
     def add_card(self, card):
-        self.cards.insert(0,card)
+        if isinstance(card, list):
+            self.cards.extend(card)
+        else:
+            self.cards.insert(0, card)
 
     def show_card(self):
         return self.cards.pop(-1)
