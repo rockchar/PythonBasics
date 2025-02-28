@@ -23,19 +23,19 @@ sample_letters = 'aaaaaaaaaaaaaaaabbbccccccccccccccccccddddddddeeeeeeeeeeeeef'
 c = Counter(sample_letters)
 print(c.most_common(2))
 
-sample_dict = defaultdict(lambda:0)
+sample_dict = defaultdict(lambda: 0)
 sample_dict["Key1"] = 1
 sample_dict["Key2"] = 2
 
 print(sample_dict["Key1"])
 print(sample_dict["WrongKey"])
 
-generic_dict = {"Key1":1,"Key2":2}
+generic_dict = {"Key1": 1, "Key2": 2}
 print(type(generic_dict["Key1"]))
-DOG = namedtuple("DOG",["AGE","BREED","NAME"])
+DOG = namedtuple("DOG", ["AGE", "BREED", "NAME"])
 print(DOG)
 
-d = DOG("5","HUSKEY","TOMMY")
+d = DOG("5", "HUSKEY", "TOMMY")
 print(d.AGE)
 print(d.NAME)
 print(d.BREED)
